@@ -15,7 +15,8 @@
     "geo",
     "data",
     "region",
-    "mtaa"
+    "mtaa",
+    "tz-geo-data"
   ],
   "author": "Matayo Ayo",
   "license": "ISC",
