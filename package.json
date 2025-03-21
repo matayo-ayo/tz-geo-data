@@ -1,0 +1,28 @@
+{
+  "name": "tz-geo-data",
+  "version": "1.0.0",
+  "description": "NPM package for providing easy access to regional, district, ward, and street data in Tanzania, including postcodes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matayo-ayo/tz-geo-data.git"
+  },
+  "keywords": [
+    "tz",
+    "location",
+    "map",
+    "geo",
+    "data",
+    "region",
+    "mtaa"
+  ],
+  "author": "Matayo Ayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matayo-ayo/tz-geo-data/issues"
+  },
+  "homepage": "https://github.com/matayo-ayo/tz-geo-data#readme"
+}
