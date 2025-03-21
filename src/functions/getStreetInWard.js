@@ -1,19 +1,17 @@
 const fs = require("fs");
 const path = require("path");
 
-// Function to get street names and places in a specific ward
 function getStreetsInWard(regionName, wardName) {
   const ward = getWardData(regionName, wardName);
   if (ward) {
     return ward.STREETS.map((street) => ({
       NAME: street.NAME,
       PLACES: street.PLACES,
-    })); // Return street name and places (which can be interpreted as the postcode or other names)
+    }));
   }
-  return []; // No streets found
+  return [];
 }
 
-// Function to get data for a specific ward (used in getStreetsInWard)
 function getWardData(regionName, wardName) {
   const regionData = loadRegionData(regionName);
   if (regionData) {
@@ -22,10 +20,9 @@ function getWardData(regionName, wardName) {
     );
     return ward;
   }
-  return null; // Ward not found in region
+  return `Mitaa haikupatikana`;
 }
 
-// Function to read region data from a JSON file
 function loadRegionData(regionName) {
   const filePath = path.join(
     __dirname,
@@ -37,7 +34,7 @@ function loadRegionData(regionName) {
     const data = fs.readFileSync(filePath, "utf-8");
     return JSON.parse(data);
   } catch (error) {
-    return null; // Region file not found or error in reading the file
+    return `Mitaa haikupatikana : ${error.message}`;
   }
 }
 

@@ -8,7 +8,7 @@ function getAllRegions() {
     const regionData = JSON.parse(
       fs.readFileSync(path.join(__dirname, "..", "regions", file), "utf-8")
     );
-    return { REGION: regionData.REGION, POSTCODE: regionData.POSTCODE }; // Return region name and postcode
+    return { REGION: regionData.REGION, POSTCODE: regionData.POSTCODE };
   });
 }
 

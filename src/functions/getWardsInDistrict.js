@@ -1,7 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 
-// Function to get ward names and postcodes in a specific district and region
 function getWardsInDistrict(regionName, districtName) {
   const regionData = loadRegionData(regionName);
   if (regionData) {
@@ -12,13 +11,12 @@ function getWardsInDistrict(regionName, districtName) {
       return district.WARD.map((ward) => ({
         NAME: ward.NAME,
         POSTCODE: ward.POSTCODE,
-      })); // Return ward name and postcode
+      }));
     }
   }
-  return []; // No wards found
+  return [];
 }
 
-// Function to read region data from a JSON file
 function loadRegionData(regionName) {
   const filePath = path.join(
     __dirname,
@@ -30,7 +28,7 @@ function loadRegionData(regionName) {
     const data = fs.readFileSync(filePath, "utf-8");
     return JSON.parse(data);
   } catch (error) {
-    return null; // Region file not found or error in reading the file
+    return `Kata hazikupatikana : ${error.message}`;
   }
 }
 

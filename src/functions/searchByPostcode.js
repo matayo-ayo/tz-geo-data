@@ -1,11 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 
-// Load all region JSON files
 const dataPath = path.join(__dirname, "../data");
 const regionFiles = fs.readdirSync(dataPath);
 
-// Function to search for a place by postcode
 function searchByPostcode(postcode) {
   for (const file of regionFiles) {
     const regionData = JSON.parse(
@@ -58,7 +56,7 @@ function searchByPostcode(postcode) {
       }
     }
   }
-  return { error: "No matching place found for this postcode." };
+  return { error: "Hakuna eneo lenye postikodi hii." };
 }
 
 module.exports = searchByPostcode;

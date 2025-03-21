@@ -1,13 +1,12 @@
 const fs = require("fs");
 const path = require("path");
 
-// Function to get region data for a specific region (place name and postcode)
 function getRegionData(regionName) {
   const regionData = loadRegionData(regionName);
   if (regionData) {
-    return { REGION: regionData.REGION, POSTCODE: regionData.POSTCODE }; // Return region name and postcode
+    return { REGION: regionData.REGION, POSTCODE: regionData.POSTCODE };
   }
-  return null; // Region not found
+  return `Mkoa haukupatinaka`; // Region not found
 }
 
 // Function to read region data from a JSON file
