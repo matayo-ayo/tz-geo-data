@@ -6,10 +6,9 @@ function getRegionData(regionName) {
   if (regionData) {
     return { REGION: regionData.REGION, POSTCODE: regionData.POSTCODE };
   }
-  return `Mkoa haukupatinaka`; // Region not found
+  return `Mkoa haukupatinaka`;
 }
 
-// Function to read region data from a JSON file
 function loadRegionData(regionName) {
   const filePath = path.join(
     __dirname,
@@ -21,7 +20,7 @@ function loadRegionData(regionName) {
     const data = fs.readFileSync(filePath, "utf-8");
     return JSON.parse(data);
   } catch (error) {
-    return null; // Region file not found or error in reading the file
+    return null;
   }
 }
 

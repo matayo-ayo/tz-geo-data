@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "NPM package for providing easy access to regional, district, ward, and street data in Tanzania, including postcodes.",
   "main": "index.js",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/matayo-ayo/tz-geo-data.git"
@@ -26,6 +25,7 @@
   "homepage": "https://github.com/matayo-ayo/tz-geo-data#readme",
   "files": [
     "index.js",
-    "src/"
+    "src/",
+    "data/"
   ]
 }

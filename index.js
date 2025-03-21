@@ -1,15 +1,13 @@
-import getAllRegions from "./src/functions/getAllRegions";
-import getRegionData from "./src/functions/getRegionData";
-import getDistrictsInRegion from "./src/functions/getDistrictsInRegion";
-import getWardsInDistrict from "./src/functions/getWardsInDistrict";
-import getStreetsInWard from "./src/functions/getStreetsInWard";
-import searchByPostcode from "./src/functions/searchByPostcode";
+const getAllRegions = require("./sr/getAllRegions");
+const getDistrictData = require("./sr/getDistrictData");
+const getWardData = require("./sr/getWardData");
+const getStreetsData = require("./sr/getStreetsData");
+const getGeoData = require("./sr/getGeoData");
 
-export default {
+module.exports = {
   getAllRegions,
-  getRegionData,
-  getDistrictsInRegion,
-  getWardsInDistrict,
-  getStreetsInWard,
-  searchByPostcode,
+  getDistrictData,
+  getWardData,
+  getStreetsData,
+  getGeoData,
 };
