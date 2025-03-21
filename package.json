@@ -23,9 +23,7 @@
     "url": "https://github.com/matayo-ayo/tz-geo-data/issues"
   },
   "homepage": "https://github.com/matayo-ayo/tz-geo-data#readme",
-  "files": [
-    "index.js",
-    "src/",
-    "data/"
-  ]
+  "dependencies": {
+    "tz-geo-data": "^1.0.2"
+  }
 }
