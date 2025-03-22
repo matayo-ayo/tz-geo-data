@@ -3,181 +3,112 @@ const path = require("path");
 
 const dataPath = path.join(__dirname, "data");
 
+function readJSONFiles() {
+  const files = fs
+    .readdirSync(dataPath)
+    .filter((file) => file.endsWith(".json"));
+
+  return files.flatMap((file) => {
+    const filePath = path.join(dataPath, file);
+    try {
+      const data = JSON.parse(fs.readFileSync(filePath));
+      return Array.isArray(data) ? data : [data];
+    } catch (error) {
+      console.error(`Error reading/parsing file ${filePath}:`, error.message);
+      return [];
+    }
+  });
+}
+
+//getAllRegions
 function getAllRegions() {
-  const files = fs
-    .readdirSync(dataPath)
-    .filter((file) => file.endsWith(".json"));
+  const regions = readJSONFiles().map((region) => ({
+    region: region.REGION,
+    postcode: region.POSTCODE,
+  }));
 
-  return files
-    .map((file) => {
-      const filePath = path.join(dataPath, file);
-
-      let regionData;
-      try {
-        regionData = JSON.parse(fs.readFileSync(filePath));
-      } catch (error) {
-        console.error(`Error reading/parsing file ${filePath}:`, error);
-        return null;
-      }
-
-      return regionData.map((region) => ({
-        region: region.REGION,
-        postcode: region.POSTCODE,
-      }));
-    })
-    .filter((region) => region !== null);
+  return regions.sort((a, b) => a.region.localeCompare(b.region));
 }
 
+// getDistrictData
 function getDistrictData(regionName) {
-  const files = fs
-    .readdirSync(dataPath)
-    .filter((file) => file.endsWith(".json"));
+  const region = readJSONFiles().find((region) => region.REGION === regionName);
 
-  console.log("Files found in data folder:", files);
+  if (!region) return [];
 
-  for (const file of files) {
-    const filePath = path.join(dataPath, file);
-    console.log("Reading file:", filePath);
-
-    let regionData;
-    try {
-      regionData = JSON.parse(fs.readFileSync(filePath));
-    } catch (error) {
-      console.error(`Error reading/parsing file ${filePath}:`, error);
-      return null;
-    }
-
-    if (regionData.REGION === regionName) {
-      return regionData.DISTRIC.map((district) => ({
-        district: district.NAME,
-        postcode: district.POSTCODE,
-      }));
-    }
-  }
-  return null;
+  return region.DISTRIC.map((district) => ({
+    name: district.NAME,
+    postcode: district.POSTCODE,
+  })).sort((a, b) => a.name.localeCompare(b.name));
 }
 
+//getWardData
 function getWardData(regionName, districtName) {
-  const files = fs
-    .readdirSync(dataPath)
-    .filter((file) => file.endsWith(".json"));
+  const region = readJSONFiles().find((region) => region.REGION === regionName);
+  if (!region) return [];
 
-  console.log("Files found in data folder:", files);
+  const district = region.DISTRIC.find(
+    (district) => district.NAME === districtName
+  );
+  if (!district) return [];
 
-  for (const file of files) {
-    const filePath = path.join(dataPath, file);
-    console.log("Reading file:", filePath);
-
-    let regionData;
-    try {
-      regionData = JSON.parse(fs.readFileSync(filePath));
-    } catch (error) {
-      console.error(`Error reading/parsing file ${filePath}:`, error);
-      return null;
-    }
-
-    if (regionData.REGION === regionName) {
-      for (const district of regionData.DISTRIC) {
-        if (district.NAME === districtName) {
-          return district.WARD.map((ward) => ({
-            ward: ward.NAME,
-            postcode: ward.POSTCODE,
-          }));
-        }
-      }
-    }
-  }
-  return null;
+  return district.WARD.map((ward) => ({
+    name: ward.NAME,
+    postcode: ward.POSTCODE,
+  })).sort((a, b) => a.name.localeCompare(b.name));
 }
 
+//getStreetsData
 function getStreetsData(regionName, districtName, wardName) {
-  const files = fs
-    .readdirSync(dataPath)
-    .filter((file) => file.endsWith(".json"));
+  const region = readJSONFiles().find((region) => region.REGION === regionName);
+  if (!region) return [];
 
-  console.log("Files found in data folder:", files);
+  const district = region.DISTRIC.find(
+    (district) => district.NAME === districtName
+  );
+  if (!district) return [];
 
-  for (const file of files) {
-    const filePath = path.join(dataPath, file);
-    console.log("Reading file:", filePath);
+  const ward = district.WARD.find((ward) => ward.NAME === wardName);
+  if (!ward) return [];
 
-    let regionData;
-    try {
-      regionData = JSON.parse(fs.readFileSync(filePath));
-    } catch (error) {
-      console.error(`Error reading/parsing file ${filePath}:`, error);
-      return null;
-    }
-
-    if (regionData.REGION === regionName) {
-      for (const district of regionData.DISTRIC) {
-        if (district.NAME === districtName) {
-          for (const ward of district.WARD) {
-            if (ward.NAME === wardName) {
-              return ward.STREETS.map((street) => ({
-                street: street.NAME,
-                places: street.PLACES,
-              }));
-            }
-          }
-        }
-      }
-    }
-  }
-  return null;
+  return ward.STREETS.map((street) => ({
+    name: street.NAME,
+    places: street.PLACES || [],
+  })).sort((a, b) => a.name.localeCompare(b.name));
 }
 
+//getGeoData
 function getGeoData(postcode) {
-  const files = fs
-    .readdirSync(dataPath)
-    .filter((file) => file.endsWith(".json"));
+  const region = readJSONFiles().find(
+    (region) =>
+      region.POSTCODE === postcode ||
+      region.DISTRIC.some(
+        (d) =>
+          d.POSTCODE === postcode ||
+          d.WARD.some(
+            (w) =>
+              w.POSTCODE === postcode ||
+              w.STREETS.some((s) => s.PLACES.includes(postcode))
+          )
+      )
+  );
 
-  console.log("Files found in data folder:", files);
+  if (!region) return null;
 
-  for (const file of files) {
-    const filePath = path.join(dataPath, file);
-    console.log("Reading file:", filePath);
+  const district = region.DISTRIC.find((d) => d.POSTCODE === postcode) || null;
+  const ward = district?.WARD.find((w) => w.POSTCODE === postcode) || null;
+  const street = ward?.STREETS.find((s) => s.PLACES.includes(postcode)) || null;
 
-    let regionData;
-    try {
-      regionData = JSON.parse(fs.readFileSync(filePath));
-    } catch (error) {
-      console.error(`Error reading/parsing file ${filePath}:`, error);
-      return null;
-    }
-
-    if (regionData.POSTCODE === postcode) {
-      return {
-        region: regionData.REGION,
-        postcode: regionData.POSTCODE,
-        districts: regionData.DISTRIC,
-      };
-    }
-
-    for (const district of regionData.DISTRIC) {
-      if (district.POSTCODE === postcode) {
-        return {
-          region: regionData.REGION,
-          district: district.NAME,
-          postcode: district.POSTCODE,
-          wards: district.WARD,
-        };
-      }
-
-      for (const ward of district.WARD) {
-        if (ward.POSTCODE === postcode) {
-          return {
-            region: regionData.REGION,
-            district: district.NAME,
-            ward: ward.NAME,
-            postcode: ward.POSTCODE,
-            streets: ward.STREETS,
-          };
-        }
-      }
-    }
-  }
-  return null;
+  return {
+    region: region.REGION,
+    regionPostcode: region.POSTCODE,
+    district: district ? district.NAME : null,
+    districtPostcode: district ? district.POSTCODE : null,
+    ward: ward ? ward.NAME : null,
+    wardPostcode: ward ? ward.POSTCODE : null,
+    street: street ? street.NAME : null,
+    places: street ? street.PLACES : [],
+  };
 }
 
 module.exports = {
