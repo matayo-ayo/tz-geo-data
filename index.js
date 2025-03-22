@@ -39,7 +39,8 @@ function getDistrictData(regionName) {
     const region = regions.find(
       (r) => formatString(r.REGION) === formatString(regionName)
     );
-    if (!region) throw new Error(`Wilaya haukupatikana katika mkoa ${regionName}`);
+    if (!region)
+      throw new Error(`Wilaya haukupatikana katika mkoa ${regionName}`);
     return region.DISTRIC.map((district) => ({
       name: district.NAME,
       postcode: district.POSTCODE,
@@ -118,77 +119,66 @@ function getStreetsData(regionName, districtName, wardName) {
 function getGeoData(postcode) {
   try {
     const searchPostcode = String(postcode).trim();
-
     const regions = readJSONFiles();
+    let result = {
+      region: null,
+      regionPostcode: null,
+      district: null,
+      districtPostcode: null,
+      ward: null,
+      wardPostcode: null,
+      streets: [],
+    };
 
-    // 5 digits postcode
-    if (searchPostcode.length === 5) {
-      for (const region of regions) {
-        for (const district of region.DISTRIC) {
-          for (const ward of district.WARD) {
-            const wardPostcode = String(ward.POSTCODE).trim();
-            if (wardPostcode === searchPostcode) {
-              return {
-                region: region.REGION,
-                regionPostcode: region.POSTCODE,
-                district: district.NAME,
-                districtPostcode: district.POSTCODE,
-                ward: ward.NAME,
-                wardPostcode: ward.POSTCODE,
-              };
+    for (const region of regions) {
+      if (String(region.POSTCODE).trim() === searchPostcode) {
+        result.region = region.REGION;
+        result.regionPostcode = region.POSTCODE;
+        return result;
+      }
+
+      for (const district of region.DISTRIC) {
+        if (String(district.POSTCODE).trim() === searchPostcode) {
+          result.region = region.REGION;
+          result.regionPostcode = region.POSTCODE;
+          result.district = district.NAME;
+          result.districtPostcode = district.POSTCODE;
+          return result;
+        }
+
+        for (const ward of district.WARD) {
+          if (String(ward.POSTCODE).trim() === searchPostcode) {
+            result.region = region.REGION;
+            result.regionPostcode = region.POSTCODE;
+            result.district = district.NAME;
+            result.districtPostcode = district.POSTCODE;
+            result.ward = ward.NAME;
+            result.wardPostcode = ward.POSTCODE;
+
+            result.streets = ward.STREETS.map((street) => ({
+              name: street.NAME,
+              places: street.PLACES || [],
+            })).sort((a, b) => a.name.localeCompare(b.name));
+
+            return result;
+          }
+
+          for (const street of ward.STREETS) {
+            if (street.PLACES.includes(searchPostcode)) {
+              result.region = region.REGION;
+              result.regionPostcode = region.POSTCODE;
+              result.district = district.NAME;
+              result.districtPostcode = district.POSTCODE;
+              result.ward = ward.NAME;
+              result.wardPostcode = ward.POSTCODE;
+              result.streets = [
+                {
+                  name: street.NAME,
+                  places: street.PLACES,
+                },
+              ];
+              return result;
             }
-          }
-        }
-      }
-    }
-
-    // 3 digits postcode
-    if (searchPostcode.length === 3) {
-      for (const region of regions) {
-        for (const district of region.DISTRIC) {
-          const districtPostcode = String(district.POSTCODE).trim();
-          if (districtPostcode === searchPostcode) {
-            return {
-              region: region.REGION,
-              regionPostcode: region.POSTCODE,
-              district: district.NAME,
-              districtPostcode: district.POSTCODE,
-              ward: null,
-              wardPostcode: null,
-            };
-          }
-        }
-      }
-    }
-
-    // 2 digits postcode
-    if (searchPostcode.length === 2) {
-      const region = regions.find(
-        (r) => String(r.POSTCODE).trim() === searchPostcode
-      );
-      if (region) {
-        return {
-          region: region.REGION,
-          regionPostcode: region.POSTCODE,
-          district: null,
-          districtPostcode: null,
-          ward: null,
-          wardPostcode: null,
-        };
-      }
-
-      for (const region of regions) {
-        for (const district of region.DISTRIC) {
-          const districtPostcode = String(district.POSTCODE).trim();
-          if (districtPostcode === searchPostcode) {
-            return {
-              region: region.REGION,
-              regionPostcode: region.POSTCODE,
-              district: district.NAME,
-              districtPostcode: district.POSTCODE,
-              ward: null,
-              wardPostcode: null,
-            };
           }
         }
       }
@@ -196,7 +186,8 @@ function getGeoData(postcode) {
 
     throw new Error(`postcode ${postcode} si sahihi`);
   } catch (error) {
-    return error.message;
+    console.error("Error in getGeoData:", error);
+    return null;
   }
 }
 
