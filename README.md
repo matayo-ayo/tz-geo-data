@@ -13,10 +13,8 @@ Package hii ni maalumu kwa taarifa zifuatazo
 
 ## 1. Installation
 
-Tumia amri hii kusanikisha maktaba:
-
 ```bash
-npm install tz-geo-data
+npm i tz-geo-data
 ```
 
 ## 2. Matumizi
@@ -24,49 +22,82 @@ npm install tz-geo-data
 ### a. Kwa kutumia import
 
 ```javascript
-import tzGeoData from "tz-geo-data";
+import {
+  getAllRegions,
+  getDistrictData,
+  getWardData,
+  getStreetsData,
+  getGeoData,
+} from "tz-geo-data";
 
 // List ya mikoa
-tzGeoData.getAllRegions();
+getAllRegions();
 // List za wilaya katika mkoa
-tzGeoData.getRegionData("JinaLaMkoa");
+getDistrictData("JinaLaMkoa");
 // List ya kata katika wilaya husika
-tzGeoData.getWardsInDistrict("jinaLaMkoa", "jinaLaWilaya");
+getWardData("jinaLaMkoa", "jinaLaWilaya");
 // List ya mitaa katika kata husika
-tzGeoData.getStreetsInWard("jinaLaMkoa", "jinaLaWilaya", "jinaLaKata");
+getStreetsData("jinaLaMkoa", "jinaLaWilaya", "jinaLaKata");
 // Data kutokana na postkodi
-tzGeoData.searchByPostcode("postikodi");
+getGeoData("postikodi");
 ```
 
 ### b. Kwa kutumia require
 
 ```javascript
-const tzGeoData = require("tz-geo-data");
+const {
+  getAllRegions,
+  getDistrictData,
+  getWardData,
+  getStreetsData,
+  getGeoData,
+} = require("tz-geo-data");
 
 // List ya mikoa
-tzGeoData.getAllRegions();
+getAllRegions();
 // List za wilaya katika mkoa
-tzGeoData.getRegionData("JinaLaMkoa");
+getDistrictData("JinaLaMkoa");
 // List ya kata katika wilaya husika
-tzGeoData.getWardsInDistrict("jinaLaMkoa", "jinaLaWilaya");
+getWardData("jinaLaMkoa", "jinaLaWilaya");
 // List ya mitaa katika kata husika
-tzGeoData.getStreetsInWard("jinaLaMkoa", "jinaLaWilaya", "jinaLaKata");
+getStreetsData("jinaLaMkoa", "jinaLaWilaya", "jinaLaKata");
 // Data kutokana na postkodi
-tzGeoData.searchByPostcode("postikodi");
+getGeoData("postikodi");
 ```
 
 ---
 
-## 3. Tafsiri ya baadhi ya jumbe
+## 3. Tafsiri ya baadhi ya errors
+Tunategemea kila kitu kiwe sawa ila ukikutana na magumu hizi zitakusaidia
 
-### "Mkoa haukupatikana"
-- Jina la mkoa si sahihi
+- ### getAllRegions()
+- "Imeshindwa kupata list ya mikoa"
+- - Futa node caches na ufanye installation ya library upya
 
-### "Wilaya haukupatikana"
-- Jina la Mkoa au Wilaya si sahihi
+### getDistrictData()
+- "Wilaya haukupatikana katika mkoa"
+- - Hakikisha jina la mkoa ni sahihi
+- - Kwa mikoa yenye nafasi kama dar zingatia nafasi au tumia (-)
 
-### "Mitaa haikupatikana"
-- Jina la Mkoa, Wilaya au Kata si sahihi
+### getWardData()
+- "Mkoa haukupatikana"
+- - Hakikisha jina la mkoa ni sahihi
+- "Wilaya haikupatikana katika mkoa"
+- - Hakikisha jina la wilaya ni sahihi
+- "Hakuna kata katika wilaya"
+- - Kata ndani ya Wilaya hazikupatikana
 
-### "Hakuna eneo lenye postikodi hii"
-- Namba ya postikodi si sahihi. Andika postikodi kwa usahihi
+### getStreetsData();
+- "Mkoa haukupatikana"
+- - Hakikisha jina la mkoa ni sahihi
+- "Wilaya haikupatikana katika mkoa"
+- - Hakikisha jina la wilaya ni sahihi
+- "Hakuna kata katika wilaya"
+- - Kata ndani ya Wilaya hazikupatikana
+- "Mitaa haikupatikana katika kata"
+- - Mitaa ndani ya kata haikupatikana
+
+### getGeoData()
+- "postcode si sahihi"
+- - Namba za postikodi si sahihi
+- - Namba za postikodi ziwe kuanzia mbili hadi tano
