@@ -1,34 +1,61 @@
 // regions
-import arusha from './regions/arusha.json';
-import darEsSalaam from './regions/dar-es-salaam.json';
-import dodoma from './regions/dodoma.json';
-import geita from './regions/geita.json';
-import iringa from './regions/iringa.json';
-import kagera from './regions/kagera.json';
-import katavi from './regions/katavi.json';
-import kigoma from './regions/kigoma.json';
-import kilimanjaro from './regions/kilimanjaro.json';
-import lindi from './regions/lindi.json';
-import manyara from './regions/manyara.json';
-import mara from './regions/mara.json';
-import mbeya from './regions/mbeya.json';
-import morogoro from './regions/morogoro.json';
-import mtwara from './regions/mtwara.json';
-import mwanza from './regions/mwanza.json';
-import njombe from './regions/njombe.json';
-import pwani from './regions/pwani.json';
-import rukwa from './regions/rukwa.json';
-import ruvuma from './regions/ruvuma.json';
-import shinyanga from './regions/shinyanga.json';
-import simiyu from './regions/simiyu.json';
-import singida from './regions/singida.json';
-import songwe from './regions/songwe.json';
-import tabora from './regions/tabora.json';
-import tanga from './regions/tanga.json';
+import arusha from "./regions/arusha.json";
+import darEsSalaam from "./regions/dar-es-salaam.json";
+import dodoma from "./regions/dodoma.json";
+import geita from "./regions/geita.json";
+import iringa from "./regions/iringa.json";
+import kagera from "./regions/kagera.json";
+import katavi from "./regions/katavi.json";
+import kigoma from "./regions/kigoma.json";
+import kilimanjaro from "./regions/kilimanjaro.json";
+import lindi from "./regions/lindi.json";
+import manyara from "./regions/manyara.json";
+import mara from "./regions/mara.json";
+import mbeya from "./regions/mbeya.json";
+import morogoro from "./regions/morogoro.json";
+import mtwara from "./regions/mtwara.json";
+import mwanza from "./regions/mwanza.json";
+import njombe from "./regions/njombe.json";
+import pwani from "./regions/pwani.json";
+import rukwa from "./regions/rukwa.json";
+import ruvuma from "./regions/ruvuma.json";
+import shinyanga from "./regions/shinyanga.json";
+import simiyu from "./regions/simiyu.json";
+import singida from "./regions/singida.json";
+import songwe from "./regions/songwe.json";
+import tabora from "./regions/tabora.json";
+import tanga from "./regions/tanga.json";
 
-const regions = [arusha, darEsSalaam, dodoma, geita, iringa, kagera, katavi, kigoma, kilimanjaro, lindi, manyara, mara, mbeya, morogoro, mtwara, mwanza, njombe, pwani, rukwa, ruvuma, shinyanga, simiyu, singida, songwe, tabora, tanga].flat();
+const regions = [
+  arusha,
+  darEsSalaam,
+  dodoma,
+  geita,
+  iringa,
+  kagera,
+  katavi,
+  kigoma,
+  kilimanjaro,
+  lindi,
+  manyara,
+  mara,
+  mbeya,
+  morogoro,
+  mtwara,
+  mwanza,
+  njombe,
+  pwani,
+  rukwa,
+  ruvuma,
+  shinyanga,
+  simiyu,
+  singida,
+  songwe,
+  tabora,
+  tanga,
+].flat();
 
-const formatString = (str) => str.trim().toLowerCase().replace(/\s+/g, '-');
+const formatString = (str) => str.trim().toLowerCase().replace(/\s+/g, "-");
 
 // getAllRegions
 export function getAllRegions() {
@@ -39,7 +66,7 @@ export function getAllRegions() {
     }));
     return regionsData.sort((a, b) => a.region.localeCompare(b.region));
   } catch (error) {
-    throw new Error('Imeshindwa kupata list ya mikoa');
+    throw new Error("Failed to get region list");
   }
 }
 
@@ -49,7 +76,7 @@ export function getDistrictData(regionName) {
     const region = regions.find(
       (r) => formatString(r.REGION) === formatString(regionName)
     );
-    if (!region) throw new Error(`Wilaya haikupatikana katika mkoa ${regionName}`);
+    if (!region) throw new Error(`Failed to get districts from ${regionName}`);
     return region.DISTRIC.map((district) => ({
       name: district.NAME,
       postcode: district.POSTCODE,
@@ -65,12 +92,14 @@ export function getWardData(regionName, districtName) {
     const region = regions.find(
       (r) => formatString(r.REGION) === formatString(regionName)
     );
-    if (!region) throw new Error(`Mkoa ${regionName} haukupatikana`);
+    if (!region) throw new Error(`Region ${regionName} not found`);
     const district = region.DISTRIC.find(
       (d) => formatString(d.NAME) === formatString(districtName)
     );
-    if (!district) throw new Error(`Wilaya ${districtName} haikupatikana katika mkoa ${regionName}`);
-    if (!district.WARD || district.WARD.length === 0) throw new Error(`Hakuna kata katika wilaya ya ${districtName}`);
+    if (!district)
+      throw new Error(`District ${districtName} not found in ${regionName}`);
+    if (!district.WARD || district.WARD.length === 0)
+      throw new Error(`No wards found in ${districtName}`);
     return district.WARD.map((ward) => ({
       name: ward.NAME,
       postcode: ward.POSTCODE,
@@ -86,18 +115,20 @@ export function getStreetsData(regionName, districtName, wardName) {
     const region = regions.find(
       (r) => formatString(r.REGION) === formatString(regionName)
     );
-    if (!region) throw new Error(`Mkoa ${regionName} haukupatikana`);
+    if (!region) throw new Error(`Region ${regionName} not found`);
 
     const district = region.DISTRIC.find(
       (d) => formatString(d.NAME) === formatString(districtName)
     );
-    if (!district) throw new Error(`Wilaya ${districtName} haikupatikana katika mkoa ${regionName}`);
+    if (!district)
+      throw new Error(`District ${districtName} not found in ${regionName}`);
 
     const ward = district.WARD.find(
       (w) => formatString(w.NAME) === formatString(wardName)
     );
-    if (!ward) throw new Error(`Kata ${wardName} haikupatikana katika wilaya ${districtName}`);
-    if (!ward.STREETS || ward.STREETS.length === 0) throw new Error(`Mitaa haikupatikana katika kata ${wardName}`);
+    if (!ward) throw new Error(`Ward ${wardName} not found in ${districtName}`);
+    if (!ward.STREETS || ward.STREETS.length === 0)
+      throw new Error(`Streets not found in ${wardName}`);
 
     return ward.STREETS.map((street) => ({
       name: street.NAME,
@@ -176,9 +207,8 @@ export function getGeoData(postcode) {
       }
     }
 
-    throw new Error(`Postcode ${postcode} si sahihi`);
+    throw new Error(`Incorrect postcode ${postcode}`);
   } catch (error) {
-    console.error('Error in getGeoData:', error);
     throw error;
   }
 }

@@ -1,25 +1,40 @@
-# 🗺️ Tanzania Geolocation Data
+# 🗺️ tz-geo-data
 
-Karibu kwenye tz-geo-data, npm package hii kwa data za geo data za Tanzania.
-Package hii ni maalumu kwa taarifa zifuatazo
+Welcome, this package is for poviding Tanzanian geodata info. It covers the following functions
 
-- Mikoa
-- Wilaya
-- Kata
-- Mitaa
-- postkodi za eneo
+- Regions
+- Districts in region
+- Wards in district
+- Streets and small towns in wards
+- Postcode to location info
+
+---
+
+# Note down before installation
+
+- Use version 2.0.1 you are
+- - Not using `nextJs`
+- - Using `comonJS`
+- - Getting this error `fs error`
+- - Getting this error `throw new ERR_IMPORT_ATTRIBUTE_MISSING(url, 'type', validType)`
+
+- Use version 2.1.1
+- - Your using `nextJs`
+- - Having `fs error` on development or building your app
+- - Having `throw new ERR_IMPORT_ATTRIBUTE_MISSING(url, 'type', validType)`
 
 ---
 
 ## 1. Installation
 
 ```bash
-npm i tz-geo-data
+npm i tz-geo-data # Latest version
+npm i tz-geo-data@2.1.0 # Version 2.1.0 for nextJs
 ```
 
 ## 2. Matumizi
 
-### a. Kwa kutumia import
+### a. Usng import
 
 ```javascript
 import {
@@ -30,19 +45,19 @@ import {
   getGeoData,
 } from "tz-geo-data";
 
-// List ya mikoa
+// Regions list
 getAllRegions();
-// List za wilaya katika mkoa
-getDistrictData("JinaLaMkoa");
-// List ya kata katika wilaya husika
-getWardData("jinaLaMkoa", "jinaLaWilaya");
-// List ya mitaa katika kata husika
-getStreetsData("jinaLaMkoa", "jinaLaWilaya", "jinaLaKata");
-// Data kutokana na postkodi
-getGeoData("postikodi");
+// Districts in region
+getDistrictData("regionName");
+// Wards in district and region
+getWardData("regionName", "districtName");
+// Streets and known places in a ward
+getStreetsData("regionName", "districtName", "wardName");
+// Geolocation Data using postcode
+getGeoData("postcode");
 ```
 
-### b. Kwa kutumia require
+### b. Using require
 
 ```javascript
 const {
@@ -53,51 +68,56 @@ const {
   getGeoData,
 } = require("tz-geo-data");
 
-// List ya mikoa
+// Regions list
 getAllRegions();
-// List za wilaya katika mkoa
-getDistrictData("JinaLaMkoa");
-// List ya kata katika wilaya husika
-getWardData("jinaLaMkoa", "jinaLaWilaya");
-// List ya mitaa katika kata husika
-getStreetsData("jinaLaMkoa", "jinaLaWilaya", "jinaLaKata");
-// Data kutokana na postkodi
-getGeoData("postikodi");
+// Districts in region
+getDistrictData("regionName");
+// Wards in district and region
+getWardData("regionName", "districtName");
+// Streets and known places in a ward
+getStreetsData("regionName", "districtName", "wardName");
+// Geolocation Data using postcode
+getGeoData("postcode");
 ```
 
 ---
 
 ## 3. Tafsiri ya baadhi ya errors
-Tunategemea kila kitu kiwe sawa ila ukikutana na magumu hizi zitakusaidia
+
+We hope everything to work fine, But things slide away then here is your guide
 
 - ### getAllRegions()
-- "Imeshindwa kupata list ya mikoa"
-- - Futa node caches na ufanye installation ya library upya
+- "Failed to get region list"
+- - Delete node caches and make a library clean installation
 
 ### getDistrictData()
-- "Wilaya haukupatikana katika mkoa"
-- - Hakikisha jina la mkoa ni sahihi
-- - Kwa mikoa yenye nafasi kama dar zingatia nafasi au tumia (-)
+
+- "Failed to get districts from region"
+- - Double check region name _(spellings, Symbols and space)_
+- - **Hint :** Regions with more than one word use (-) or space
 
 ### getWardData()
-- "Mkoa haukupatikana"
-- - Hakikisha jina la mkoa ni sahihi
-- "Wilaya haikupatikana katika mkoa"
-- - Hakikisha jina la wilaya ni sahihi
-- "Hakuna kata katika wilaya"
-- - Kata ndani ya Wilaya hazikupatikana
+
+- "Region not found"
+- - Double check region name
+- "District not found in"
+- - Double check district name
+- "No wards found"
+- - No wards in found dstrict
 
 ### getStreetsData();
-- "Mkoa haukupatikana"
-- - Hakikisha jina la mkoa ni sahihi
-- "Wilaya haikupatikana katika mkoa"
-- - Hakikisha jina la wilaya ni sahihi
-- "Hakuna kata katika wilaya"
-- - Kata ndani ya Wilaya hazikupatikana
-- "Mitaa haikupatikana katika kata"
-- - Mitaa ndani ya kata haikupatikana
+
+- "Region not found"
+- - Double check region name
+- "District not found in"
+- - Double check district name
+- "No wards found"
+- - No wards in found dstrict
+- "Streets not found"
+- - Streets not found in selected ward
 
 ### getGeoData()
-- "postcode si sahihi"
-- - Namba za postikodi si sahihi
-- - Namba za postikodi ziwe kuanzia mbili hadi tano
+
+- "Incorrect postcode"
+- - Incorect postcode number
+- - Postcode numbers should be 2 to 5 digits

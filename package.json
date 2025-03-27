@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/matayo-ayo/tz-geo-data#readme",
   "dependencies": {
-    "tz-geo-data": "^1.0.2"
+    "tz-geo-data": "^2.1.0"
   }
 }
