@@ -2,11 +2,11 @@
 
 Welcome, this package is for poviding Tanzanian geodata info. It covers the following functions
 
-- Regions
-- Districts in region
-- Wards in district
-- Streets and small towns in wards
-- Postcode to location info
+=> Regions
+=> Districts in region
+=> Wards in district
+=> Streets and small towns in wards
+=> Postcode to location info
 
 [Sample site](https://tz-geo-data.vercel.app/)
 
@@ -14,23 +14,23 @@ Welcome, this package is for poviding Tanzanian geodata info. It covers the foll
 
 ### note down before installation
 
-**Use version 2.0.1 you're**
-- Using `comonJS`
-- Not using `nextJs`
-- Getting this bug `fs error`
-- Getting this bug `throw new ERR_IMPORT_ATTRIBUTE_MISSING(url, 'type', validType)`
+**Use version 2.0.1**
+=> Using `comonJS`
+=> Not using `nextJs`
+=> Getting this bug `fs error`
+=> Getting this bug `throw new ERR_IMPORT_ATTRIBUTE_MISSING(url, 'type', validType)`
 
-**Use version 2.1.3**
-- You're using `nextJs`
-- Having this bug `fs error`
-- Having this bug `throw new ERR_IMPORT_ATTRIBUTE_MISSING(url, 'type', validType)`
+**Use version 2.1.4**
+=> You're using `nextJs`
+=> Having this bug `fs error`
+=> Having this bug `throw new ERR_IMPORT_ATTRIBUTE_MISSING(url, 'type', validType)`
 ---
 
 ## 1. Installation
 ```bash
 npm i tz-geo-data # Latest version
 # or
-npm i tz-geo-data@2.1.3 # Version 2.1.3 for nextJs
+npm i tz-geo-data@2.1.4 # Version 2.1.4 for nextJs
 ```
 
 ## 2. Usage
@@ -85,32 +85,32 @@ _We hope everything to work fine, But things slide away then here is your guide_
 
 ### getAllRegions()
 "Failed to get region list"
-- Delete node caches and make a library clean installation
+=> Delete node caches and make a library clean installation
 
 ### getDistrictData()
 "Failed to get districts from region"
-- Double check region name _(spellings, Symbols and space)_
-- **Hint :** Regions with more than one word use (-) or space
+=> Double check region name _(spellings, Symbols and space)_
+=> **Hint :** Regions with more than one word use (-) or space
 
 ### getWardData
 "Region not found"
-- Double check region name
+=>  Double check region name
 "District not found in"
-- Double check district name
+=>  Double check district name
 "No wards found"
-- No wards in found dstrict
+=>  No wards in found dstrict
 
 ### getStreetsData();
 "Region not found"
-- Double check region name
+=> Double check region name
 "District not found in"
-- Double check district name
+=> Double check district name
 "No wards found"
-- No wards in found dstrict
+=> No wards in found dstrict
 "Streets not found"
-- Streets not found in selected ward
+=> Streets not found in selected ward
 
 ### getGeoData()
 "Incorrect postcode"
-- Incorect postcode number
-- Postcode numbers should be 2 to 5 digits
+=> Incorect postcode number
+=> Postcode numbers should be 2 to 5 digits
