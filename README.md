@@ -29,7 +29,7 @@ Welcome, this package is for poviding Tanzanian geodata info. It covers the foll
 
 ```bash
 npm i tz-geo-data # Latest version
-npm i tz-geo-data@2.1.0 # Version 2.1.0 for nextJs
+npm i tz-geo-data@2.1.1 # Version 2.1.1 for nextJs
 ```
 
 ## 2. Matumizi
