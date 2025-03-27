@@ -20,7 +20,7 @@ Welcome, this package is for poviding Tanzanian geodata info. It covers the foll
 - - Getting this error `fs error`
 - - Getting this error `throw new ERR_IMPORT_ATTRIBUTE_MISSING(url, 'type', validType)`
 
-- Use version 2.1.1
+- Use version 2.1.2
 - - You're using `nextJs`
 - - Having `fs error`
 - - Having `throw new ERR_IMPORT_ATTRIBUTE_MISSING(url, 'type', validType)`
@@ -31,7 +31,7 @@ Welcome, this package is for poviding Tanzanian geodata info. It covers the foll
 ```bash
 npm i tz-geo-data # Latest version
 # or
-npm i tz-geo-data@2.1.1 # Version 2.1.1 for nextJs
+npm i tz-geo-data@2.1.2 # Version 2.1.2 for nextJs
 ```
 
 ## 2. Usage
