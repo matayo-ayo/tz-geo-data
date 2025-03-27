@@ -1,7 +1,7 @@
 {
   "name": "tz-geo-data",
   "version": "2.1.1",
-  "description": "NPM package for providing easy access to regional, district, ward, and street data in Tanzania, including postcodes.",
+  "description": "npm package for providing easy access to regional, district, ward, and street data in Tanzania, including postcodes.",
   "main": "index.js",
   "repository": {
     "type": "git",

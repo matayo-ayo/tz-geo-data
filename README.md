@@ -12,32 +12,31 @@ Welcome, this package is for poviding Tanzanian geodata info. It covers the foll
 
 ---
 
-# Note down before installation
+### note down before installation
 
-- Use version 2.0.1 you are
+- Use version 2.0.1 you're
 - - Not using `nextJs`
 - - Using `comonJS`
 - - Getting this error `fs error`
 - - Getting this error `throw new ERR_IMPORT_ATTRIBUTE_MISSING(url, 'type', validType)`
 
 - Use version 2.1.1
-- - Your using `nextJs`
-- - Having `fs error` on development or building your app
+- - You're using `nextJs`
+- - Having `fs error`
 - - Having `throw new ERR_IMPORT_ATTRIBUTE_MISSING(url, 'type', validType)`
 
 ---
 
 ## 1. Installation
-
 ```bash
 npm i tz-geo-data # Latest version
+# or
 npm i tz-geo-data@2.1.1 # Version 2.1.1 for nextJs
 ```
 
-## 2. Matumizi
+## 2. Usage
 
-### a. Usng import
-
+### - a. Using import
 ```javascript
 import {
   getAllRegions,
@@ -59,8 +58,7 @@ getStreetsData("regionName", "districtName", "wardName");
 getGeoData("postcode");
 ```
 
-### b. Using require
-
+### - b. Using require
 ```javascript
 const {
   getAllRegions,
@@ -84,8 +82,7 @@ getGeoData("postcode");
 
 ---
 
-## 3. Tafsiri ya baadhi ya errors
-
+## 3. Errors
 We hope everything to work fine, But things slide away then here is your guide
 
 - ### getAllRegions()
