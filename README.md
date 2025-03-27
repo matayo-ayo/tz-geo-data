@@ -8,6 +8,8 @@ Welcome, this package is for poviding Tanzanian geodata info. It covers the foll
 - Streets and small towns in wards
 - Postcode to location info
 
+[Sample site](https://tz-geo-data.vercel.app/)
+
 ---
 
 # Note down before installation
