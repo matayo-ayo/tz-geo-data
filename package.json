@@ -1,6 +1,6 @@
 {
   "name": "tz-geo-data",
-  "version": "2.1.5",
+  "version": "3.0.0",
   "description": "Offline Tanzania location and postcode lookup, hierarchical search, data coverage auditing and coordinate-based distance calculations.",
   "main": "index.js",
   "repository": {
