@@ -1,0 +1,407 @@
+[
+  {
+    "REGION": "KUSINI UNGUJA",
+    "POSTCODE": 72,
+    "DISTRIC": [
+      {
+        "NAME": "KUSINI",
+        "POSTCODE": 721,
+        "WARD": [
+          {
+            "NAME": "MUYUNI",
+            "POSTCODE": 72106,
+            "STREETS": [
+              {
+                "NAME": "KIBUTENI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIZIMKAZI DIMBANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIZIMKAZI MKUNGUNI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MTENDE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MUYUNI 'A'",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MUYUNI 'B'",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MUYUNI 'C'",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "PAJE",
+            "POSTCODE": 72110,
+            "STREETS": [
+              {
+                "NAME": "BWEJUU",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "DONGWE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MICHAMVI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "PAJE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "JAMBIANI",
+            "POSTCODE": 72112,
+            "STREETS": [
+              {
+                "NAME": "JAMBIANI KIBIGIJA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "JAMBIANI KIKADINI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KITOGANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MUUNGONI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "KIONGONI",
+            "POSTCODE": 72113,
+            "STREETS": [
+              {
+                "NAME": "KAJENGWA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIJINI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIONGONI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MZURI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "NGANANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "TASANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "NAME": "KATI",
+        "POSTCODE": 722,
+        "WARD": [
+          {
+            "NAME": "KOANI",
+            "POSTCODE": 72202,
+            "STREETS": [
+              {
+                "NAME": "KIDIMNI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KOANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MACHUI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MIWANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "KIBOJE",
+            "POSTCODE": 72203,
+            "STREETS": [
+              {
+                "NAME": "GHANA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIBOJE MKWAJUNI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIBOJE MWEMBESHAURI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MGENI HAJI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MITAKAWANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "TUNDUNI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "UZINI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "BAMBI",
+            "POSTCODE": 72205,
+            "STREETS": [
+              {
+                "NAME": "BAMBI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIJIBWEMTU",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MCHANGANI SHAMBA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MPAPA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "PAGALI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "UMBUJI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "CHWAKA",
+            "POSTCODE": 72207,
+            "STREETS": [
+              {
+                "NAME": "CHWAKA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "JENDELE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MARUMBI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "PONGWE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "UROA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "CHEJU",
+            "POSTCODE": 72212,
+            "STREETS": [
+              {
+                "NAME": "CHARAWE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "CHEJU",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "NDIJANI MSEWENI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "NDIJANI MWEMBEPUNDA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "PETE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "UKONGORONI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "ZAWIYANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "UBAGO",
+            "POSTCODE": 72213,
+            "STREETS": [
+              {
+                "NAME": "DUNGA BWENI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "DUNGA KIEMBENI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "UBAGO",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "TUNGUU",
+            "POSTCODE": 72214,
+            "STREETS": [
+              {
+                "NAME": "BINGUNI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "JUMBI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "TUNGUU",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "BUNGI",
+            "POSTCODE": 72215,
+            "STREETS": [
+              {
+                "NAME": "BUNGI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIKUNGWI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "NG'AMBWA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "TINDINI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "UNGUJA UKUU KAEBONA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "UNGUJA UKUU KAEPWANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "UZI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

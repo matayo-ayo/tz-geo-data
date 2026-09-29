@@ -1,0 +1,433 @@
+[
+  {
+    "REGION": "KASKAZINI PEMBA",
+    "POSTCODE": 75,
+    "DISTRIC": [
+      {
+        "NAME": "WETE",
+        "POSTCODE": 751,
+        "WARD": [
+          {
+            "NAME": "JADIDA",
+            "POSTCODE": 75104,
+            "STREETS": [
+              {
+                "NAME": "JADIDA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIPANGANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "LIMBANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MTEMANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "SELEM",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "BOPWE",
+            "POSTCODE": 75105,
+            "STREETS": [
+              {
+                "NAME": "BOPWE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "UTAANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "PANDANI",
+            "POSTCODE": 75108,
+            "STREETS": [
+              {
+                "NAME": "MAZIWANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "PANDANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "MTAMBWE",
+            "POSTCODE": 75109,
+            "STREETS": [
+              {
+                "NAME": "KISIWANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MTAMBWE KASKAZINI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MTAMBWE KUSINI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "MCHANGA MDOGO",
+            "POSTCODE": 75111,
+            "STREETS": [
+              {
+                "NAME": "CHWALE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KINYIKANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KOJANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MCHANGA MDOGO",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MPAMBANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "GANDO",
+            "POSTCODE": 75116,
+            "STREETS": [
+              {
+                "NAME": "FUNDO",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "GANDO",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "JUNGUNI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "UKUNJWI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "KIUYU",
+            "POSTCODE": 75118,
+            "STREETS": [
+              {
+                "NAME": "KAMBINI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KANGAGANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIUYU KIGONGONI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIUYU MINUNGWINI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "PIKI",
+            "POSTCODE": 75119,
+            "STREETS": [
+              {
+                "NAME": "MZAMBARAU TAKAO",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "PIKI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "KINYASINI",
+            "POSTCODE": 75120,
+            "STREETS": [
+              {
+                "NAME": "FINYA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KINYASINI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIZIMBANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MGOGONI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "KIUNGONI",
+            "POSTCODE": 75121,
+            "STREETS": [
+              {
+                "NAME": "KIUNGONI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MJANANZA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MLINDO",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "PEMBENI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "SHENGEJUU",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "NAME": "MICHEWENI",
+        "POSTCODE": 752,
+        "WARD": [
+          {
+            "NAME": "MICHEWENI",
+            "POSTCODE": 75201,
+            "STREETS": [
+              {
+                "NAME": "CHAMBONI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MAJENZI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MICHEWENI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "SHUMBA MJINI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "TUMBE",
+            "POSTCODE": 75202,
+            "STREETS": [
+              {
+                "NAME": "MIHOGONI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "TUMBE MAGHARIBI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "TUMBE MASHARIKI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "KIUYU",
+            "POSTCODE": 75205,
+            "STREETS": [
+              {
+                "NAME": "KIUYU MBUYUNI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MAZIWA NG'OMBE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "SHANAKE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "KONDE",
+            "POSTCODE": 75209,
+            "STREETS": [
+              {
+                "NAME": "KIFUNDI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KIPANGE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KONDE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "MSUKA",
+            "POSTCODE": 75210,
+            "STREETS": [
+              {
+                "NAME": "MAKANGALE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MSUKA MAGHARIBI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "MSUKA MASHARIKI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "TONDOONI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "CHIMBA",
+            "POSTCODE": 75211,
+            "STREETS": [
+              {
+                "NAME": "CHIMBA",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "KINOWE",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "SHUMBA VIAMBONI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "SIZINI",
+            "POSTCODE": 75212,
+            "STREETS": [
+              {
+                "NAME": "MJINI WINGWI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "SIZINI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          },
+          {
+            "NAME": "WINGWI",
+            "POSTCODE": 75213,
+            "STREETS": [
+              {
+                "NAME": "MTEMANI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "WINGWI MAPOFU",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              },
+              {
+                "NAME": "WINGWI NJUGUNI",
+                "TYPE": "SHEHIA",
+                "PLACES": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

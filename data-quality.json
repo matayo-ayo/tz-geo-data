@@ -1,0 +1,851 @@
+{
+  "scope": "Tanzania mainland and Zanzibar; bundled postal locality data, not a verified current administrative register",
+  "counts": {
+    "region": 31,
+    "district": 169,
+    "ward": 4055,
+    "street": 17116,
+    "place": 64276
+  },
+  "missingRegions": [],
+  "hasCoordinates": false,
+  "completenessVerified": false,
+  "blankPlaceEntries": 4202,
+  "duplicatePlaceEntries": 93,
+  "issueCount": 104,
+  "issues": [
+    {
+      "type": "duplicate-name",
+      "path": [
+        "ARUSHA",
+        "NGORONGORO",
+        "OLOIRIEN/ MAGAIDURU"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "ARUSHA",
+        "NGORONGORO",
+        "OLOIRIEN/ MAGAIDURU"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "ARUSHA",
+        "NGORONGORO",
+        "OLOIRIEN/ MAGAIDURU"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "ARUSHA",
+        "NGORONGORO",
+        "MISIGIYO"
+      ]
+    },
+    {
+      "type": "district-postcode-length",
+      "path": [
+        "DAR ES SALAAM",
+        "ILALA CBD"
+      ],
+      "postcode": 11
+    },
+    {
+      "type": "district-postcode-length",
+      "path": [
+        "DAR ES SALAAM",
+        "ILALA"
+      ],
+      "postcode": 12
+    },
+    {
+      "type": "district-postcode-length",
+      "path": [
+        "DAR ES SALAAM",
+        "KINONDONI"
+      ],
+      "postcode": 14
+    },
+    {
+      "type": "district-postcode-length",
+      "path": [
+        "DAR ES SALAAM",
+        "TEMEKE"
+      ],
+      "postcode": 15
+    },
+    {
+      "type": "district-postcode-length",
+      "path": [
+        "DAR ES SALAAM",
+        "UBUNGO"
+      ],
+      "postcode": 16
+    },
+    {
+      "type": "district-postcode-length",
+      "path": [
+        "DAR ES SALAAM",
+        "KIGAMBONI"
+      ],
+      "postcode": 17
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "DODOMA",
+        "DODOMA",
+        "MNADANI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "DODOMA",
+        "DODOMA",
+        "MNADANI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "DODOMA",
+        "DODOMA",
+        "IYUMBU"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "DODOMA",
+        "CHAMWINO",
+        "MAJELEKO"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "DODOMA",
+        "KONDOA",
+        "CHEMCHEM"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "DODOMA",
+        "KONDOA",
+        "CHEMCHEM"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "DODOMA",
+        "KONDOA",
+        "CHEMCHEM"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "DODOMA",
+        "CHEMBA",
+        "MRIJO"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "KAGERA",
+        "BUKOBA CBD",
+        "KASHAI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "KAGERA",
+        "BUKOBA CBD",
+        "KASHAI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "KAGERA",
+        "BUKOBA CBD",
+        "KASHAI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "KAGERA",
+        "BUKOBA CBD",
+        "KASHAI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "KAGERA",
+        "BUKOBA CBD",
+        "KASHAI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "KAGERA",
+        "BUKOBA CBD",
+        "KASHAI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "KAGERA",
+        "BUKOBA CBD",
+        "KASHAI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "KAGERA",
+        "BUKOBA CBD",
+        "KASHAI"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "KAGERA",
+        "MISSENYI",
+        "KITOBO"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "KAGERA",
+        "KARAGWE",
+        "NYAKAHANGA"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "KAGERA",
+        "KARAGWE",
+        "NDAMA"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "KAGERA",
+        "KARAGWE",
+        "IHANDA"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "LINDI",
+        "NACHINGWEA",
+        "CHIUMBATI SHULENI"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "MANYARA",
+        "MBULU",
+        "YAEDACHINI"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MANYARA",
+        "KITETO",
+        "DONGO"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "MUKENDO"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "MWIGOBERO"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "IRINGO"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "KITAJI"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "KAMUNYONGE"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "MWISENGE"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "NYAMATARE"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "NYASHO"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "NYAKATO"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "MAKOKO"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "BUHARE"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "KIGERA"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "BWERI"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "RWAMLIMI"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "KWANGWA"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "MUSOMA CBD",
+        "MSHIKAMANO"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "SERENGETI",
+        "MUGUMU"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "SERENGETI",
+        "STENDI KUU"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "SERENGETI",
+        "GEITASAMO"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "SERENGETI",
+        "MOROTONGA"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MARA",
+        "SERENGETI",
+        "UWANJA WA NDEGE"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "MBARALI",
+        "KONGOLO"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "MBARALI",
+        "LUGELELE"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "KYELA"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "NDOBO"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "ITOPE"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "IKIMBA"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "MIKOROSHONI"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "MBUGANI"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "MWANGANYANGA"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "SERENGETI"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "ITUNGE"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "NKUYU"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "NDANDALO"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "IPYANA"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "BONDENI"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "IBANDA"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "KYELA",
+        "NJISI"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "CHUNYA",
+        "MATUNDASI"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MBEYA",
+        "CHUNYA",
+        "MAKONGOLOSI"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MOROGORO",
+        "KILOMBERO",
+        "MLIMBA"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MOROGORO",
+        "GAIRO",
+        "GAIRO"
+      ]
+    },
+    {
+      "type": "ward-postcode-length",
+      "path": [
+        "MOROGORO",
+        "MALINYI",
+        "KILOSAMPEPO"
+      ],
+      "postcode": 678010
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "MTWARA",
+        "TANDAHIMBA",
+        "MDIMBA MNYOMA"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "MTWARA",
+        "TANDAHIMBA",
+        "MDIMBA MNYOMA"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MTWARA",
+        "TANDAHIMBA",
+        "TANDAHIMBA"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MTWARA",
+        "TANDAHIMBA",
+        "NANHYANGA"
+      ]
+    },
+    {
+      "type": "missing-name",
+      "path": [
+        "MTWARA",
+        "NEWALA",
+        "MUUNGANO"
+      ]
+    },
+    {
+      "type": "duplicate-name",
+      "path": [
+        "TANGA",
+        "PANGANI",
+        "PANGANI"
+      ]
+    }
+  ]
+}

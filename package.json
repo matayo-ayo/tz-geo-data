@@ -1,0 +1,70 @@
+{
+  "name": "tz-geo-data",
+  "version": "2.1.5",
+  "description": "Offline Tanzania location and postcode lookup, hierarchical search, data coverage auditing and coordinate-based distance calculations.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matayo-ayo/tz-geo-data.git"
+  },
+  "keywords": [
+    "tz",
+    "location",
+    "map",
+    "geo",
+    "data",
+    "region",
+    "mtaa",
+    "tanzania",
+    "postcode",
+    "wards",
+    "streets",
+    "distance",
+    "haversine",
+    "typescript"
+  ],
+  "author": "Matayo Ayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matayo-ayo/tz-geo-data/issues"
+  },
+  "homepage": "https://github.com/matayo-ayo/tz-geo-data#readme",
+  "type": "commonjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.mts",
+        "default": "./index.mjs"
+      },
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./index.js"
+      }
+    },
+    "./regions/*.json": "./regions/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "index.d.ts",
+    "index.d.mts",
+    "lib",
+    "regions",
+    "README.md",
+    "DATA_QUALITY.md",
+    "data-quality.json",
+    "LICENCE.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "audit:data": "node scripts/audit-data.js",
+    "check": "npm run audit:data && npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
