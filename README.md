@@ -92,21 +92,9 @@ const km = getDistance(
 
 The same API accepts `{ region: 'Arusha' }`, district/ward selectors, or selectors ending in `place`. Either endpoint may also be explicit coordinates. For regions, districts, and wards, choose a consistent representative point (such as a centroid); the result measures between those points, not administrative boundaries. Missing coordinates, ambiguous names, and asynchronous resolvers throw errors. No automatic fallback to a parent location occurs.
 
-## Coverage and data quality
+## Coverage
 
 Includes all 31 regions (26 mainland and five Zanzibar), 169 district entries, 4,055 postal ward entries, 17,116 street/locality entries, and 64,276 nonblank place entries after per-street deduplication. These are record counts, not independently verified counts of current administrative units.
-
-**All five Zanzibar regions are included. Completeness below region level remains unverified.** Zanzibar adds 11 districts, 110 postal wards, and 388 shehia from the official TCRA postcode service (retrieved 2026-09-25). Shehia are available through `getStreetsData()` and street-level search; raw JSON marks them `TYPE: "SHEHIA"`. They represent localities rather than physical roads, and their `PLACES` arrays are empty because no lower-level places were supplied. Use district names `Magharibi A` and `Magharibi B` without quotes. The original data has unnamed records, duplicate names, and suspicious postcodes. See [DATA_QUALITY.md](DATA_QUALITY.md) and the machine-readable [data-quality.json](data-quality.json) before depending on completeness. Blank places are unknown data, not evidence that an area has no places.
-
-## Development
-
-```sh
-npm run audit:data
-npm test
-npm pack --dry-run
-```
-
-The audit regenerates the coverage report and lists source issues for review; it does not invent missing names or change postal codes. Contributions should include an authoritative source, retrieval date, and the full location hierarchy. Keep postal localities distinct from administrative councils.
 
 ## License
 
